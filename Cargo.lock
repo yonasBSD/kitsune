@@ -309,7 +309,7 @@ version = "7.0.13"
 source = "git+https://github.com/aumetra/async-graphql.git?branch=axum-0.8#690ece7cd408e28bfaf0c434fdd4c46ef1a78ef2"
 dependencies = [
  "async-graphql",
- "axum 0.8.1",
+ "axum 0.8.2",
  "bytes",
  "futures-util",
  "serde_json",
@@ -481,11 +481,11 @@ dependencies = [
 
 [[package]]
 name = "axum"
-version = "0.8.1"
+version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6d6fd624c75e18b3b4c6b9caf42b1afe24437daaee904069137d8bab077be8b8"
+checksum = "efea76243612a2436fb4074ba0cf3ba9ea29efdeb72645d8fc63f116462be1de"
 dependencies = [
- "axum-core 0.5.0",
+ "axum-core 0.5.1",
  "axum-macros",
  "base64 0.22.1",
  "bytes",
@@ -540,12 +540,12 @@ dependencies = [
 
 [[package]]
 name = "axum-core"
-version = "0.5.0"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "df1362f362fd16024ae199c1970ce98f9661bf5ef94b9808fee734bc3698b733"
+checksum = "eab1b0df7cded837c40dacaa2e1c33aa17c84fc3356ae67b5645f1e83190753e"
 dependencies = [
  "bytes",
- "futures-util",
+ "futures-core",
  "http",
  "http-body",
  "http-body-util",
@@ -560,12 +560,12 @@ dependencies = [
 
 [[package]]
 name = "axum-extra"
-version = "0.10.0"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "460fc6f625a1f7705c6cf62d0d070794e94668988b1c38111baeec177c715f7b"
+checksum = "543f0799d22486525744f06a3580b64f3e51d97aba73ea0e09040969c0034722"
 dependencies = [
- "axum 0.8.1",
- "axum-core 0.5.0",
+ "axum 0.8.2",
+ "axum-core 0.5.1",
  "bytes",
  "cookie",
  "form_urlencoded",
@@ -770,9 +770,9 @@ dependencies = [
 
 [[package]]
 name = "brotli-decompressor"
-version = "4.0.1"
+version = "4.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9a45bd2e4095a8b518033b128020dd4a55aab1c0a381ba4404a472630f4bc362"
+checksum = "74fa05ad7d803d413eb8380983b092cbbaf9a85f151b871360e7b00cd7060b37"
 dependencies = [
  "alloc-no-stdlib",
  "alloc-stdlib",
@@ -1452,7 +1452,7 @@ name = "cursiv"
 version = "0.0.1-pre.6"
 dependencies = [
  "aliri_braid",
- "axum-core 0.5.0",
+ "axum-core 0.5.1",
  "blake3",
  "cookie",
  "futures-test",
@@ -2103,7 +2103,7 @@ checksum = "b3ea1ec5f8307826a5b71094dd91fc04d4ae75d5709b20ad351c7fb4815c86ec"
 name = "flashy"
 version = "0.0.1-pre.6"
 dependencies = [
- "axum-core 0.5.0",
+ "axum-core 0.5.1",
  "blake3",
  "cookie",
  "futures-test",
@@ -3330,7 +3330,7 @@ dependencies = [
  "async-graphql",
  "async-graphql-axum",
  "athena",
- "axum 0.8.1",
+ "axum 0.8.2",
  "axum-extra",
  "blowocking",
  "bytes",
@@ -3620,7 +3620,7 @@ dependencies = [
 name = "kitsune-error"
 version = "0.0.1-pre.6"
 dependencies = [
- "axum-core 0.5.0",
+ "axum-core 0.5.1",
  "eyre",
  "garde",
  "http",
@@ -4784,9 +4784,9 @@ dependencies = [
 
 [[package]]
 name = "oauth2"
-version = "5.0.0-rc.1"
+version = "5.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "23d385da3c602d29036d2f70beed71c36604df7570be17fed4c5b839616785bf"
+checksum = "51e219e79014df21a225b1860a479e2dcd7cbd9130f4defd4bd0e191ea31d67d"
 dependencies = [
  "base64 0.22.1",
  "chrono",
@@ -4841,9 +4841,9 @@ checksum = "1261fe7e33c73b354eab43b1273a57c8f967d0391e80353e51f764ac02cf6775"
 
 [[package]]
 name = "openidconnect"
-version = "4.0.0-rc.1"
+version = "4.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a93a50789d0b649986bfb104cdef97736ca072d579ec88496d5c6f9abed0ea85"
+checksum = "6dd50d4a5e7730e754f94d977efe61f611aadd3131f6a2b464f6e3a4167e8ef7"
 dependencies = [
  "base64 0.21.7",
  "chrono",
@@ -7668,9 +7668,9 @@ checksum = "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
 
 [[package]]
 name = "uuid"
-version = "1.12.0"
+version = "1.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "744018581f9a3454a9e15beb8a33b017183f1e7c0cd170232a2d1453b23a51c4"
+checksum = "b3758f5e68192bb96cc8f9b7e2c2cfdabb435499a28499a42f8f984092adad4b"
 dependencies = [
  "getrandom 0.2.15",
  "rand 0.8.5",
